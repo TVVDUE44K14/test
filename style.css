@@ -1,0 +1,78 @@
+ /* Reset */
+ * {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  section {
+    /* max-width: 600px;
+    max-height: 600px; */
+
+
+    /* padding: 30px auto; */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 20px auto; */
+    /* text-align: center; */
+    /* width: 800px; */
+}
+div#image {
+    background-color: #9999CC;
+    padding: 15px 60px;
+    /* border-radius: 10px; */
+    /* margin: 0 0 20px 0; */
+    /* trong css, khả năng kế thừa xảy ra khi phần tử con không khai báo giá trị thuộc tính rõ ràng nên sẽ lấy từ cha, div ở đây có with mặc định là auto và không được khai báo nên nó ưu tiên được kế thừa từ section
+     */
+}
+#image > p{
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+h2{
+    font-size: 45px;
+   font-weight: 300;
+   margin: 15px auto 25px;
+}
+h2 span{
+    color: #0099FF;
+    font-weight: 600;
+}
+p.description {
+   margin-bottom: 40px;
+}
+ul{
+    /* display: flex;
+    flex-direction: row; */
+    display: inline;
+    list-style: none;
+    margin: auto 0 0 0;
+    text-align: center;
+}
+li{
+    display: inline-block;
+    padding: 10px 30px;
+    max-width: 100px;
+    background-color: #3e3e3e;
+    color: #ffffff;
+    /* margin: 0; */
+    margin: 0 20px;
+    border-radius: 4px;
+}
+li:first-child{
+    margin-right: 20px;
+}
+li:hover{
+    background-color: #0099FF;
+    cursor: pointer;
+    transition: 0.3s;
+  
+}
